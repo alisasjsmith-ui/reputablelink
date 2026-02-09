@@ -115,12 +115,12 @@ function showMessage(response) {
     audioElement.play() // Play the sound
       .catch(e => console.error("Audio playback failed:", e)); // Catch and log playback errors
 
-    // Update the text content, display the message, and change the image to "dance.gif"
+    // Update the text content, display the message, and change the image to "images.jpg"
     const yesMessage = document.getElementById("question");
     yesMessage.textContent = "See you on the 14th POOKIE";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
-    document.getElementsByClassName("image")[0].src = "images/dance.gif";
+    document.getElementsByClassName("image")[0].src = "images/images.jpg";
 
     // Remove the "Yes" button
     document.getElementById("yesButton").remove();
